@@ -1,7 +1,11 @@
 package test.fianl1;
 
 public class Child extends Parent{
+// final 필드는 나중에 값 변경 금지(final 필드 값 변경 금지)
+	public final int time = 3;
+	
 	public void rest() {
-		System.out.println("2시간 휴식한다.");
+//		time = 5;
+		System.out.println(time + "시간 휴식한다.");
 	}
 }
